@@ -14,8 +14,8 @@ let showMenu = false
 
 menuBtn.addEventListener('click', toggleMenu)
 
-addEventListener('DOMContentLoaded', responsiveHome)
-addEventListener('DOMContentLoaded', responsiveContact)
+divHome.addEventListener('DOMContentLoaded', responsiveHome)
+divContact.addEventListener('DOMContentLoaded', responsiveContact)
 
 function toggleMenu() {
   if (!showMenu) {
