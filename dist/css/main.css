@@ -507,8 +507,51 @@ html {
 }
 
 .contact footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1rem;
+  text-align: right;
+  padding: 1rem;
   position: fixed;
-  right: inherit;
+  bottom: .5rem;
+  right: 15%;
+  left: 15%;
+  color: #fff;
+}
+
+.contact footer .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: .5rem;
+  position: initial;
+}
+
+.contact footer .social-icons a {
+  padding: 0.4rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact footer .social-icons a:hover {
+  color: #9C27B0;
 }
 
 @media screen and (min-width: 320px) {
@@ -642,6 +685,30 @@ html {
         grid-template-columns: 1fr 1fr;
     background: none;
     padding-top: 0;
+  }
+  .home .home__img {
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 60%;
+    height: 60%;
+    background: url("../img/foto de perfil edwin jr.jpeg") center top;
+    background-size: cover;
+  }
+  .contact {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    background: none;
+    padding-top: 0;
+  }
+  .contact .contact__img {
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 60%;
+    height: 60%;
+    background: url("../img/foto de perfil edwin jr.jpeg") center top;
+    background-size: cover;
   }
 }
 
