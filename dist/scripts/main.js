@@ -8,13 +8,14 @@ const newDivHome = document.createElement('div')
 const divContact = document.getElementById('contact__list_id')
 const newDivContact = document.createElement('div')
 const browserWidth = window.outerWidth
-const specificScreenSize = 1366 
+const specificScreenSize = 1366
 
 let showMenu = false
 
 menuBtn.addEventListener('click', toggleMenu)
-divHome.addEventListener('DOMContentLoaded', responsiveHome)
-// divContact.addEventListener('DOMContentLoaded', responsiveContact)
+
+addEventListener('DOMContentLoaded', responsiveHome)
+addEventListener('DOMContentLoaded', responsiveContact)
 
 function toggleMenu() {
   if (!showMenu) {
@@ -41,12 +42,9 @@ function responsiveHome() {
   }
 }
 
-// function responsiveContact() {
-//   if (browserWidth == specificScreenSize) {
-//     divContact.insertAdjacentElement('afterend', newDivContact)
-//     newDivContact.classList.add('contact__img')    
-//   }
-// }
-
-responsiveHome()
-// responsiveContact()
+function responsiveContact() {
+  if (browserWidth == specificScreenSize) {
+    divContact.insertAdjacentElement('afterend', newDivContact)
+    newDivContact.classList.add('contact__img')    
+  }
+}
